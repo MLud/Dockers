@@ -5,7 +5,7 @@ RUN apt-get -qqy update && apt-get install -qqy \
         openssh-client \
         qpdf
         
-## Install packages from CRAN 
+## Install packages from CRAN  
 RUN install2.r --error \ 
     -r 'http://cran.rstudio.com' \
 ##    googleCloudRunner\

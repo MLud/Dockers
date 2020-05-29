@@ -9,7 +9,7 @@ RUN apt-get -qqy update && apt-get install -qqy \
 RUN install2.r --error \ 
     -r 'http://cran.rstudio.com' \
 ##    googleCloudRunner\
-    v8\
+    V8\
     rvest\
     jsonlite\
     lubridate\

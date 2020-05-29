@@ -1,4 +1,5 @@
-FROM rocker/tidyverse
+#FROM rocker/tidyverse
+FROM rocker/r-ver:3.6.3
 MAINTAINER Michal Ludwicki (Ludwickim@gmail.com)
 
 RUN apt-get -qqy update && apt-get install -qqy \
@@ -9,6 +10,7 @@ RUN apt-get -qqy update && apt-get install -qqy \
 RUN install2.r --error \ 
     -r 'http://cran.rstudio.com' \
 ##    googleCloudRunner\
+	tidyverse\
     V8\
     rvest\
     jsonlite\

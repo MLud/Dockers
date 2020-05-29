@@ -1,4 +1,4 @@
-FROM rocker/r-ver
+FROM rocker/tidyverse
 MAINTAINER Michal Ludwicki (Ludwickim@gmail.com)
 RUN apt-get -qqy update && apt-get install -qqy \
         openssh-client \
@@ -8,7 +8,6 @@ RUN apt-get -qqy update && apt-get install -qqy \
 RUN install2.r --error \ 
     -r 'http://cran.rstudio.com' \
 ##    googleCloudRunner\
-	tidyverse\
     V8\
     rvest\
     jsonlite\
